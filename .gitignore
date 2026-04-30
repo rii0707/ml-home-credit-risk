@@ -1,0 +1,42 @@
+# Secrets — never commit Kaggle credentials
+config/kaggle.json
+config/access_token
+config/access_token.txt
+
+# Data — never commit raw CSVs or large binaries
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.parquet
+
+# Models
+models/*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Reports / outputs (keep structure, ignore generated files)
+reports/figures/*.png
+reports/figures/*.pdf
